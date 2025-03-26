@@ -23,7 +23,7 @@ public class UserRegisterResource {
     }
 
     @PostMapping("/novo")
-    public ResponseEntity<UserRegisterModel> novo(@Valid UserRegisterModel user) {
+    public ResponseEntity<UserRegisterModel> novo(@RequestBody UserRegisterModel user) {
         UserRegisterModel userRegisterRecovered = userRegisterService.novo(user);
         return ResponseEntity.ok(userRegisterRecovered);
     }

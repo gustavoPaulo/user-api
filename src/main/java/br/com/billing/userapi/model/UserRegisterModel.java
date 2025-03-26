@@ -69,6 +69,10 @@ public class UserRegisterModel {
         return date_creation;
     }
 
+    public void setDate_creation(LocalDateTime date_creation) {
+        this.date_creation = date_creation;
+    }
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
